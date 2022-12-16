@@ -1,6 +1,6 @@
 package pairmatching
 
-enum class Mission(val value: String, private val level: Level) {
+enum class Mission(private val value: String, private val level: Level) {
     CAR_RACING("자동차경주", Level.LEVEL1),
     LOTTO("로또", Level.LEVEL1),
     BASEBALL("숫자야구게임", Level.LEVEL1),
@@ -9,6 +9,9 @@ enum class Mission(val value: String, private val level: Level) {
     SUBWAY("지하철노선도", Level.LEVEL2),
     PERFORMANCE("성능개선" , Level.LEVEL4),
     PUBLISHING("배포", Level.LEVEL4);
+
+    fun getValue() = this.value
+    fun getLevel() = this.level
 
     companion object {
         private const val VERTICAL_LINE = " | "

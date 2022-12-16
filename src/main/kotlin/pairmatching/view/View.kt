@@ -15,7 +15,14 @@ class View {
         }
     }
 
-    fun chooseCurriculum() {
+    fun chooseCurriculum(): List<String> {
         outputView.printCurriculumOptions()
+        return try {
+            inputView.getCurriculum()
+        }
+        catch (e: IllegalArgumentException) {
+            outputView.printErrorMessage(e)
+            chooseCurriculum()
+        }
     }
 }

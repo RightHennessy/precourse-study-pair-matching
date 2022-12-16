@@ -8,6 +8,8 @@ enum class Course(private val value: String) {
         private const val COURSE = "과정: "
         private const val VERTICAL_LINE = " | "
 
+        fun names() = listOf(BACKEND.value, FRONTEND.value)
+
         fun getCourseNames(): StringBuilder {
             val stringBuilder = StringBuilder()
             stringBuilder.append(COURSE)

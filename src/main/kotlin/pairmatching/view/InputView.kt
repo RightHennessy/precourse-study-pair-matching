@@ -11,4 +11,10 @@ class InputView {
         exceptions.validateServiceOption(input)
         return input
     }
+
+    fun getCurriculum(): List<String> {
+        val input = readLine()
+        exceptions.validateCurriculumInput(input)
+        return input.split(", ")
+    }
 }
