@@ -1,7 +1,9 @@
 package pairmatching
 
 class PairMatching {
+    private val data = Data()
+
     fun start() {
-        TODO("Not yet implemented")
+        data.readFile()
     }
 }
