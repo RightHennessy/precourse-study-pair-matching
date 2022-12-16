@@ -35,14 +35,13 @@
 ```
 
 ```kotlin
-> 코드 예시
         
 val crewNames: List<String> // 파일에서 로드한 크루 이름 목록
 val shuffledCrew: List<String> = Randoms.shuffle(crewNames) // 섞인 크루 이름 목록
 
 // 페어 매칭 & 검증
 
-...
+
 ```
 
 - 페어 재매칭 시도
