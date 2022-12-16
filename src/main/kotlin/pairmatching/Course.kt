@@ -1,9 +1,20 @@
 package pairmatching
 
-enum class Course(val value: String) {
-
+enum class Course(private val value: String) {
     BACKEND("백엔드"),
-    FRONTEND("프론트엔드"),;
+    FRONTEND("프론트엔드");
 
-    // 추가 기능 구현
+    companion object {
+        private const val COURSE = "과정: "
+        private const val VERTICAL_LINE = " | "
+
+        fun getCourseNames(): StringBuilder {
+            val stringBuilder = StringBuilder()
+            stringBuilder.append(COURSE)
+            stringBuilder.append(BACKEND.value)
+            stringBuilder.append(VERTICAL_LINE)
+            stringBuilder.append(FRONTEND.value)
+            return stringBuilder
+        }
+    }
 }

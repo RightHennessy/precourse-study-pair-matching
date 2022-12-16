@@ -14,4 +14,8 @@ class View {
             chooseService()
         }
     }
+
+    fun chooseCurriculum() {
+        outputView.printCurriculumOptions()
+    }
 }

@@ -8,6 +8,8 @@ enum class Service(private val choice: String, private val option: String) {
     THREE("3", "페어 초기화"),
     QUIT("Q", "종료");
 
+    fun getChoice() = this.choice
+
     companion object {
         fun options() = listOf(ONE.choice, TWO.choice, THREE.choice, QUIT.choice)
 
@@ -15,7 +17,7 @@ enum class Service(private val choice: String, private val option: String) {
             val stringBuilder = StringBuilder()
             for (service in Service.values()) {
                 stringBuilder.append(service.choice)
-                stringBuilder.append(" ")
+                stringBuilder.append(". ")
                 stringBuilder.append(service.option)
                 stringBuilder.append("\n")
             }

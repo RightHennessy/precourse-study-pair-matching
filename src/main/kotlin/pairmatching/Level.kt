@@ -1,7 +1,6 @@
 package pairmatching
 
 enum class Level(val value: String) {
-
     LEVEL1("레벨1"),
     LEVEL2("레벨2"),
     LEVEL3("레벨3"),
