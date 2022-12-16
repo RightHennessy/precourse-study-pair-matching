@@ -1,4 +1,4 @@
-package pairmatching
+package pairmatching.model
 
 import kotlin.text.StringBuilder
 

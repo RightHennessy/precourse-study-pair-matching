@@ -1,4 +1,8 @@
-package pairmatching
+package pairmatching.controller
+
+import pairmatching.model.Data
+import pairmatching.MatchingService
+import pairmatching.model.Service
 
 class PairMatching {
     private val data = Data()

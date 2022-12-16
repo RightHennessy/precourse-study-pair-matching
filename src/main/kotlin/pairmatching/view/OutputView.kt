@@ -1,8 +1,8 @@
 package pairmatching.view
 
-import pairmatching.Course
-import pairmatching.Mission
-import pairmatching.Service
+import pairmatching.model.Course
+import pairmatching.model.Mission
+import pairmatching.model.Service
 
 class OutputView {
     fun requestChooseService() {

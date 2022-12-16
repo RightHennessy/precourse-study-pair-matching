@@ -1,4 +1,4 @@
-package pairmatching
+package pairmatching.model
 
 enum class Level(val value: String) {
     LEVEL1("레벨1"),

@@ -1,4 +1,4 @@
-package pairmatching
+package pairmatching.model
 
 enum class Course(private val value: String) {
     BACKEND("백엔드"),

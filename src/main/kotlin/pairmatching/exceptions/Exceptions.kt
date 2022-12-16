@@ -1,4 +1,9 @@
-package pairmatching
+package pairmatching.exceptions
+
+import pairmatching.model.Course
+import pairmatching.model.Level
+import pairmatching.model.Mission
+import pairmatching.model.Service
 
 class Exceptions {
     fun validateServiceOption(input: String) {

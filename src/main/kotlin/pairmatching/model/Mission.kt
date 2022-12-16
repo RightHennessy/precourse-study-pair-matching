@@ -1,4 +1,4 @@
-package pairmatching
+package pairmatching.model
 
 enum class Mission(private val value: String, private val level: Level) {
     CAR_RACING("자동차경주", Level.LEVEL1),

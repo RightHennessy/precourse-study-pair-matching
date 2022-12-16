@@ -1,7 +1,7 @@
 package pairmatching.view
 
 import camp.nextstep.edu.missionutils.Console.readLine
-import pairmatching.Exceptions
+import pairmatching.exceptions.Exceptions
 
 class InputView {
     private val exceptions = Exceptions()

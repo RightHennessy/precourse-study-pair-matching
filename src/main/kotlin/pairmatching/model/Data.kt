@@ -1,11 +1,11 @@
-package pairmatching
+package pairmatching.model
 
 import java.io.FileReader
 
 class Data {
     private var frontCrewNames = listOf<String>()
     private var backCrewNames = listOf<String>()
-    val matchingResult = listOf<Map<List<String>, List<Pair<String, String>>>>()
+    val matchingResult = listOf<String>()
 
     fun readFile() {
         val backCrewPath = "src\\main\\kotlin\\resources\\backend-crew.md"
