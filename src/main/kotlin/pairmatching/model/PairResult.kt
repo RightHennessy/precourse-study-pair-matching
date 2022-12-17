@@ -1,9 +1,22 @@
 package pairmatching.model
 
-import pairmatching.model.Course
-import pairmatching.model.Level
-import pairmatching.model.Mission
+import camp.nextstep.edu.missionutils.Randoms.shuffle
 
-class PairResult(course: Course, level: Level, mission: Mission) {
+class PairResult(course: String, level: String, mission: String) {
+    private val pairs = mutableListOf<String>()
 
+    fun makePairs(curriculum: List<String>) {
+        val randomPair = shuffle(curriculum)
+
+        for (random in randomPair) {
+            pairs.add(random)
+        }
+    }
+
+    fun getPairs() {
+        val stringBuilder = StringBuilder()
+        for (i in pairs.indices) {
+            stringBuilder.append(pairs[i] + " : " + pairs[i+1])
+        }
+    }
 }

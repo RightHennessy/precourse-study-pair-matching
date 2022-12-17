@@ -1,5 +1,6 @@
 package pairmatching
 
+import pairmatching.model.PairResult
 import pairmatching.view.View
 
 class MatchingService {
@@ -10,7 +11,9 @@ class MatchingService {
     }
 
     fun getMatching() {
-        view.chooseCurriculum()
+        val curriculum = view.chooseCurriculum()
+        PairResult(curriculum[0], curriculum[1], curriculum[2]).makePairs(curriculum)
+        view.printPairs(curriculum)
     }
 
     fun showPairs() {

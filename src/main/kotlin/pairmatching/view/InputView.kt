@@ -15,6 +15,7 @@ class InputView {
     fun getCurriculum(): List<String> {
         val input = readLine()
         exceptions.validateCurriculumInput(input)
+        // exceptions.isExistPair(input)
         return input.split(", ")
     }
 }

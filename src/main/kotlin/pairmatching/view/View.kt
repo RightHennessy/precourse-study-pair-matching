@@ -25,4 +25,8 @@ class View {
             chooseCurriculum()
         }
     }
+
+    fun printPairs(curriculum: List<String>) {
+
+    }
 }

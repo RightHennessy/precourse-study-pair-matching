@@ -1,9 +1,6 @@
 package pairmatching.exceptions
 
-import pairmatching.model.Course
-import pairmatching.model.Level
-import pairmatching.model.Mission
-import pairmatching.model.Service
+import pairmatching.model.*
 
 class Exceptions {
     fun validateServiceOption(input: String) {
@@ -28,6 +25,17 @@ class Exceptions {
         }
         return false
     }
+
+/*
+    fun isExistPair(input: String): Boolean {
+        val inputs = input.split(", ")
+        val pairResult = PairResult(inputs[0], inputs[1], inputs[2])
+        if (pairResult.pairs.isEmpty()) {
+            return false
+        }
+        return true
+    }
+*/
 
     companion object {
         const val ERROR_MESSAGE = "[ERROR] "
